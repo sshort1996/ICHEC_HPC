@@ -1,0 +1,1 @@
+Message passing works as intended. Average times per ping ~2E-3ish. This \bar{t} doesnt vary with n however so the meaning behind part 3 is lost on me. If \bar{t} varied with n or if \bar{t} was close to the resolution of the timer then I could maybe say more. At this time however, nothing changes and it seems \bar{t} is meaningful for all n. 

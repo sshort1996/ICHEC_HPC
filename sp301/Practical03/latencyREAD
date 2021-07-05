@@ -1,0 +1,1 @@
+Transferring initial messages from part 2 takes an average of t = 2.015E-4 s for 2 digits integer messages. For latency test used 1 bit unsigned char '0' as message. Latency  measured is t = 2.0148E-4 s.  

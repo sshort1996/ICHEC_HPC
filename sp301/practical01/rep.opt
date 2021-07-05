@@ -1,0 +1,1927 @@
+
+Analyzing loop at dotNaive.c:85
+
+dotNaive.c:85: note: ===== analyze_loop_nest =====
+dotNaive.c:85: note: === vect_analyze_loop_form ===
+dotNaive.c:85: note: === get_loop_niters ===
+dotNaive.c:85: note: ==> get_loop_niters:(unsigned int) _113
+dotNaive.c:85: note: Symbolic number of iterations is (unsigned int) _113
+dotNaive.c:85: note: === vect_analyze_data_refs ===
+
+dotNaive.c:85: note: not vectorized: loop contains function calls or data references that cannot be analyzed
+dotNaive.c:85: note: bad data references.
+Analyzing loop at dotNaive.c:79
+
+dotNaive.c:79: note: ===== analyze_loop_nest =====
+dotNaive.c:79: note: === vect_analyze_loop_form ===
+dotNaive.c:79: note: === get_loop_niters ===
+dotNaive.c:79: note: ==> get_loop_niters:(unsigned int) _113
+dotNaive.c:79: note: Symbolic number of iterations is (unsigned int) _113
+dotNaive.c:79: note: === vect_analyze_data_refs ===
+
+dotNaive.c:79: note: get vectype with 2 units of type double
+dotNaive.c:79: note: vectype: vector(2) double
+dotNaive.c:79: note: === vect_analyze_scalar_cycles ===
+dotNaive.c:79: note: Analyze phi: i_151 = PHI <i_90(25), 0(34)>
+
+dotNaive.c:79: note: Access function of PHI: {0, +, 1}_6
+dotNaive.c:79: note: step: 1,  init: 0
+dotNaive.c:79: note: Detected induction.
+dotNaive.c:79: note: Analyze phi: sig_157 = PHI <sig_89(25), 0.0(34)>
+
+dotNaive.c:79: note: Access function of PHI: {0.0, +, _88}_6
+dotNaive.c:79: note: step: _88,  init: 0.0
+dotNaive.c:79: note: step unknown.
+dotNaive.c:79: note: Analyze phi: sig_157 = PHI <sig_89(25), 0.0(34)>
+
+dotNaive.c:79: note: reduction: unsafe fp math optimization: sig_89 = _88 + sig_157;
+
+dotNaive.c:79: note: Unknown def-use cycle pattern.
+dotNaive.c:79: note: === vect_pattern_recog ===
+dotNaive.c:79: note: vect_is_simple_use: operand _83
+dotNaive.c:79: note: def_stmt: _83 = (long unsigned int) i_151;
+
+dotNaive.c:79: note: type of def: 3.
+dotNaive.c:79: note: vect_is_simple_use: operand i_151
+dotNaive.c:79: note: def_stmt: i_151 = PHI <i_90(25), 0(34)>
+
+dotNaive.c:79: note: type of def: 4.
+dotNaive.c:79: note: vect_is_simple_use: operand 8
+dotNaive.c:79: note: vect_is_simple_use: operand _87
+dotNaive.c:79: note: def_stmt: _87 = _86 - timeAvg_136;
+
+dotNaive.c:79: note: type of def: 3.
+dotNaive.c:79: note: === vect_mark_stmts_to_be_vectorized ===
+dotNaive.c:79: note: init: phi relevant? i_151 = PHI <i_90(25), 0(34)>
+
+dotNaive.c:79: note: init: phi relevant? sig_157 = PHI <sig_89(25), 0.0(34)>
+
+dotNaive.c:79: note: init: stmt relevant? _83 = (long unsigned int) i_151;
+
+dotNaive.c:79: note: init: stmt relevant? _84 = _83 * 8;
+
+dotNaive.c:79: note: init: stmt relevant? _85 = times_39 + _84;
+
+dotNaive.c:79: note: init: stmt relevant? _86 = *_85;
+
+dotNaive.c:79: note: init: stmt relevant? _87 = _86 - timeAvg_136;
+
+dotNaive.c:79: note: init: stmt relevant? _88 = _87 * _87;
+
+dotNaive.c:79: note: init: stmt relevant? sig_89 = _88 + sig_157;
+
+dotNaive.c:79: note: vec_stmt_relevant_p: used out of loop.
+dotNaive.c:79: note: mark relevant 0, live 1.
+dotNaive.c:79: note: init: stmt relevant? i_90 = i_151 + 1;
+
+dotNaive.c:79: note: init: stmt relevant? if (i_90 < _114)
+
+dotNaive.c:79: note: worklist: examine stmt: sig_89 = _88 + sig_157;
+
+dotNaive.c:79: note: vect_is_simple_use: operand _88
+dotNaive.c:79: note: def_stmt: _88 = _87 * _87;
+
+dotNaive.c:79: note: type of def: 3.
+dotNaive.c:79: note: mark relevant 0, live 1.
+dotNaive.c:79: note: vect_is_simple_use: operand sig_157
+dotNaive.c:79: note: def_stmt: sig_157 = PHI <sig_89(25), 0.0(34)>
+
+dotNaive.c:79: note: Unsupported pattern.
+dotNaive.c:79: note: not vectorized: unsupported use in stmt.
+dotNaive.c:79: note: unexpected pattern.
+Analyzing loop at dotNaive.c:73
+
+dotNaive.c:73: note: ===== analyze_loop_nest =====
+dotNaive.c:73: note: === vect_analyze_loop_form ===
+dotNaive.c:73: note: === get_loop_niters ===
+dotNaive.c:73: note: ==> get_loop_niters:(unsigned int) _113
+dotNaive.c:73: note: Symbolic number of iterations is (unsigned int) _113
+dotNaive.c:73: note: === vect_analyze_data_refs ===
+
+dotNaive.c:73: note: get vectype with 2 units of type double
+dotNaive.c:73: note: vectype: vector(2) double
+dotNaive.c:73: note: === vect_analyze_scalar_cycles ===
+dotNaive.c:73: note: Analyze phi: i_150 = PHI <i_80(24), 0(22)>
+
+dotNaive.c:73: note: Access function of PHI: {0, +, 1}_5
+dotNaive.c:73: note: step: 1,  init: 0
+dotNaive.c:73: note: Detected induction.
+dotNaive.c:73: note: Analyze phi: timeAvg_156 = PHI <timeAvg_79(24), 0.0(22)>
+
+dotNaive.c:73: note: Access function of PHI: {0.0, +, _78}_5
+dotNaive.c:73: note: step: _78,  init: 0.0
+dotNaive.c:73: note: step unknown.
+dotNaive.c:73: note: Analyze phi: timeAvg_156 = PHI <timeAvg_79(24), 0.0(22)>
+
+dotNaive.c:73: note: reduction: unsafe fp math optimization: timeAvg_79 = _78 + timeAvg_156;
+
+dotNaive.c:73: note: Unknown def-use cycle pattern.
+dotNaive.c:73: note: === vect_pattern_recog ===
+dotNaive.c:73: note: vect_is_simple_use: operand _75
+dotNaive.c:73: note: def_stmt: _75 = (long unsigned int) i_150;
+
+dotNaive.c:73: note: type of def: 3.
+dotNaive.c:73: note: vect_is_simple_use: operand i_150
+dotNaive.c:73: note: def_stmt: i_150 = PHI <i_80(24), 0(22)>
+
+dotNaive.c:73: note: type of def: 4.
+dotNaive.c:73: note: vect_is_simple_use: operand 8
+dotNaive.c:73: note: === vect_mark_stmts_to_be_vectorized ===
+dotNaive.c:73: note: init: phi relevant? i_150 = PHI <i_80(24), 0(22)>
+
+dotNaive.c:73: note: init: phi relevant? timeAvg_156 = PHI <timeAvg_79(24), 0.0(22)>
+
+dotNaive.c:73: note: init: stmt relevant? _75 = (long unsigned int) i_150;
+
+dotNaive.c:73: note: init: stmt relevant? _76 = _75 * 8;
+
+dotNaive.c:73: note: init: stmt relevant? _77 = times_39 + _76;
+
+dotNaive.c:73: note: init: stmt relevant? _78 = *_77;
+
+dotNaive.c:73: note: init: stmt relevant? timeAvg_79 = _78 + timeAvg_156;
+
+dotNaive.c:73: note: vec_stmt_relevant_p: used out of loop.
+dotNaive.c:73: note: mark relevant 0, live 1.
+dotNaive.c:73: note: init: stmt relevant? i_80 = i_150 + 1;
+
+dotNaive.c:73: note: init: stmt relevant? if (i_80 < _114)
+
+dotNaive.c:73: note: worklist: examine stmt: timeAvg_79 = _78 + timeAvg_156;
+
+dotNaive.c:73: note: vect_is_simple_use: operand _78
+dotNaive.c:73: note: def_stmt: _78 = *_77;
+
+dotNaive.c:73: note: type of def: 3.
+dotNaive.c:73: note: mark relevant 0, live 1.
+dotNaive.c:73: note: vect_is_simple_use: operand timeAvg_156
+dotNaive.c:73: note: def_stmt: timeAvg_156 = PHI <timeAvg_79(24), 0.0(22)>
+
+dotNaive.c:73: note: Unsupported pattern.
+dotNaive.c:73: note: not vectorized: unsupported use in stmt.
+dotNaive.c:73: note: unexpected pattern.
+Analyzing loop at dotNaive.c:60
+
+dotNaive.c:60: note: ===== analyze_loop_nest =====
+dotNaive.c:60: note: === vect_analyze_loop_form ===
+dotNaive.c:60: note: not vectorized: multiple nested loops.
+dotNaive.c:60: note: bad loop form.
+Analyzing loop at dotNaive.c:103
+
+dotNaive.c:103: note: ===== analyze_loop_nest =====
+dotNaive.c:103: note: === vect_analyze_loop_form ===
+dotNaive.c:103: note: === get_loop_niters ===
+dotNaive.c:103: note: ==> get_loop_niters:(unsigned int) _111
+dotNaive.c:103: note: Symbolic number of iterations is (unsigned int) _111
+dotNaive.c:103: note: === vect_analyze_data_refs ===
+
+dotNaive.c:103: note: get vectype with 2 units of type double
+dotNaive.c:103: note: vectype: vector(2) double
+dotNaive.c:103: note: get vectype with 2 units of type double
+dotNaive.c:103: note: vectype: vector(2) double
+dotNaive.c:103: note: === vect_analyze_scalar_cycles ===
+dotNaive.c:103: note: Analyze phi: i_163 = PHI <i_125(11), 0(32)>
+
+dotNaive.c:103: note: Access function of PHI: {0, +, 1}_4
+dotNaive.c:103: note: step: 1,  init: 0
+dotNaive.c:103: note: Detected induction.
+dotNaive.c:103: note: Analyze phi: z_164 = PHI <z_124(11), 0.0(32)>
+
+dotNaive.c:103: note: Access function of PHI: {0.0, +, _122}_4
+dotNaive.c:103: note: step: _122,  init: 0.0
+dotNaive.c:103: note: step unknown.
+dotNaive.c:103: note: Analyze phi: z_164 = PHI <z_124(11), 0.0(32)>
+
+dotNaive.c:103: note: reduction: unsafe fp math optimization: z_124 = _122 + z_164;
+
+dotNaive.c:103: note: Unknown def-use cycle pattern.
+dotNaive.c:103: note: === vect_pattern_recog ===
+dotNaive.c:103: note: vect_is_simple_use: operand _116
+dotNaive.c:103: note: def_stmt: _116 = (long unsigned int) i_163;
+
+dotNaive.c:103: note: type of def: 3.
+dotNaive.c:103: note: vect_is_simple_use: operand i_163
+dotNaive.c:103: note: def_stmt: i_163 = PHI <i_125(11), 0(32)>
+
+dotNaive.c:103: note: type of def: 4.
+dotNaive.c:103: note: vect_is_simple_use: operand 8
+dotNaive.c:103: note: vect_is_simple_use: operand _119
+dotNaive.c:103: note: def_stmt: _119 = *_118;
+
+dotNaive.c:103: note: type of def: 3.
+dotNaive.c:103: note: === vect_mark_stmts_to_be_vectorized ===
+dotNaive.c:103: note: init: phi relevant? i_163 = PHI <i_125(11), 0(32)>
+
+dotNaive.c:103: note: init: phi relevant? z_164 = PHI <z_124(11), 0.0(32)>
+
+dotNaive.c:103: note: init: stmt relevant? _116 = (long unsigned int) i_163;
+
+dotNaive.c:103: note: init: stmt relevant? _117 = _116 * 8;
+
+dotNaive.c:103: note: init: stmt relevant? _118 = A_43 + _117;
+
+dotNaive.c:103: note: init: stmt relevant? _119 = *_118;
+
+dotNaive.c:103: note: init: stmt relevant? _120 = B_45 + _117;
+
+dotNaive.c:103: note: init: stmt relevant? _121 = *_120;
+
+dotNaive.c:103: note: init: stmt relevant? _122 = _119 * _121;
+
+dotNaive.c:103: note: init: stmt relevant? z_124 = _122 + z_164;
+
+dotNaive.c:103: note: vec_stmt_relevant_p: used out of loop.
+dotNaive.c:103: note: mark relevant 0, live 1.
+dotNaive.c:103: note: init: stmt relevant? i_125 = i_163 + 1;
+
+dotNaive.c:103: note: init: stmt relevant? if (_112 > i_125)
+
+dotNaive.c:103: note: worklist: examine stmt: z_124 = _122 + z_164;
+
+dotNaive.c:103: note: vect_is_simple_use: operand _122
+dotNaive.c:103: note: def_stmt: _122 = _119 * _121;
+
+dotNaive.c:103: note: type of def: 3.
+dotNaive.c:103: note: mark relevant 0, live 1.
+dotNaive.c:103: note: vect_is_simple_use: operand z_164
+dotNaive.c:103: note: def_stmt: z_164 = PHI <z_124(11), 0.0(32)>
+
+dotNaive.c:103: note: Unsupported pattern.
+dotNaive.c:103: note: not vectorized: unsupported use in stmt.
+dotNaive.c:103: note: unexpected pattern.
+Analyzing loop at dotNaive.c:61
+
+dotNaive.c:61: note: ===== analyze_loop_nest =====
+dotNaive.c:61: note: === vect_analyze_loop_form ===
+dotNaive.c:61: note: === get_loop_niters ===
+dotNaive.c:61: note: ==> get_loop_niters:(unsigned int) _111
+dotNaive.c:61: note: Symbolic number of iterations is (unsigned int) _111
+dotNaive.c:61: note: === vect_analyze_data_refs ===
+
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: === vect_analyze_scalar_cycles ===
+dotNaive.c:61: note: Analyze phi: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: Access function of PHI: {0, +, 1}_3
+dotNaive.c:61: note: step: 1,  init: 0
+dotNaive.c:61: note: Detected induction.
+dotNaive.c:61: note: Analyze phi: .MEM_158 = PHI <.MEM_62(9), .MEM_139(21)>
+
+dotNaive.c:61: note: === vect_pattern_recog ===
+dotNaive.c:61: note: vect_is_simple_use: operand _47
+dotNaive.c:61: note: def_stmt: _47 = (long unsigned int) j_153;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: vect_is_simple_use: operand 8
+dotNaive.c:61: note: vect_is_simple_use: operand _52
+dotNaive.c:61: note: def_stmt: _52 = (double) j_51;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand _59
+dotNaive.c:61: note: def_stmt: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: === vect_mark_stmts_to_be_vectorized ===
+dotNaive.c:61: note: init: phi relevant? j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: init: phi relevant? .MEM_158 = PHI <.MEM_62(9), .MEM_139(21)>
+
+dotNaive.c:61: note: init: stmt relevant? _47 = (long unsigned int) j_153;
+
+dotNaive.c:61: note: init: stmt relevant? _48 = _47 * 8;
+
+dotNaive.c:61: note: init: stmt relevant? _49 = A_43 + _48;
+
+dotNaive.c:61: note: init: stmt relevant? j_51 = j_153 + 1;
+
+dotNaive.c:61: note: init: stmt relevant? _52 = (double) j_51;
+
+dotNaive.c:61: note: init: stmt relevant? _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: init: stmt relevant? _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: init: stmt relevant? *_49 = _55;
+
+dotNaive.c:61: note: vec_stmt_relevant_p: stmt has vdefs.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: init: stmt relevant? _57 = B_45 + _48;
+
+dotNaive.c:61: note: init: stmt relevant? _58 = (double) j_153;
+
+dotNaive.c:61: note: init: stmt relevant? _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: init: stmt relevant? _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: init: stmt relevant? _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: init: stmt relevant? *_57 = _61;
+
+dotNaive.c:61: note: vec_stmt_relevant_p: stmt has vdefs.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: init: stmt relevant? if (j_51 < _112)
+
+dotNaive.c:61: note: worklist: examine stmt: *_57 = _61;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _61
+dotNaive.c:61: note: def_stmt: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: worklist: examine stmt: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _60
+dotNaive.c:61: note: def_stmt: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def_stmt is out of loop.
+dotNaive.c:61: note: worklist: examine stmt: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _59
+dotNaive.c:61: note: def_stmt: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def_stmt is out of loop.
+dotNaive.c:61: note: worklist: examine stmt: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _58
+dotNaive.c:61: note: def_stmt: _58 = (double) j_153;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: worklist: examine stmt: _58 = (double) j_153;
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: worklist: examine stmt: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_51
+dotNaive.c:61: note: def_stmt: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: vect_is_simple_use: operand 0
+dotNaive.c:61: note: worklist: examine stmt: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: already marked relevant/live.
+dotNaive.c:61: note: worklist: examine stmt: *_49 = _55;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _55
+dotNaive.c:61: note: def_stmt: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: worklist: examine stmt: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _53
+dotNaive.c:61: note: def_stmt: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def_stmt is out of loop.
+dotNaive.c:61: note: worklist: examine stmt: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _52
+dotNaive.c:61: note: def_stmt: _52 = (double) j_51;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def_stmt is out of loop.
+dotNaive.c:61: note: worklist: examine stmt: _52 = (double) j_51;
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_51
+dotNaive.c:61: note: def_stmt: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: mark relevant 4, live 0.
+dotNaive.c:61: note: already marked relevant/live.
+dotNaive.c:61: note: === vect_analyze_dependences ===
+dotNaive.c:61: note: === vect_determine_vectorization_factor ===
+dotNaive.c:61: note: ==> examining phi: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: get vectype for scalar type:  int
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: nunits = 4
+dotNaive.c:61: note: ==> examining phi: .MEM_158 = PHI <.MEM_62(9), .MEM_139(21)>
+
+dotNaive.c:61: note: ==> examining statement: _47 = (long unsigned int) j_153;
+
+dotNaive.c:61: note: skip.
+dotNaive.c:61: note: ==> examining statement: _48 = _47 * 8;
+
+dotNaive.c:61: note: skip.
+dotNaive.c:61: note: ==> examining statement: _49 = A_43 + _48;
+
+dotNaive.c:61: note: skip.
+dotNaive.c:61: note: ==> examining statement: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: get vectype for scalar type:  int
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: get vectype for scalar type:  int
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: nunits = 4
+dotNaive.c:61: note: ==> examining statement: _52 = (double) j_51;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  int
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: nunits = 4
+dotNaive.c:61: note: ==> examining statement: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: *_49 = _55;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: _57 = B_45 + _48;
+
+dotNaive.c:61: note: skip.
+dotNaive.c:61: note: ==> examining statement: _58 = (double) j_153;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  int
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: nunits = 4
+dotNaive.c:61: note: ==> examining statement: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: *_57 = _61;
+
+dotNaive.c:61: note: get vectype for scalar type:  double
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: nunits = 2
+dotNaive.c:61: note: ==> examining statement: if (j_51 < _112)
+
+dotNaive.c:61: note: skip.
+dotNaive.c:61: note: vectorization factor = 4
+dotNaive.c:61: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:61: note: vect_compute_data_ref_alignment:
+dotNaive.c:61: note: can't force alignment of ref: *_49
+dotNaive.c:61: note: vect_compute_data_ref_alignment:
+dotNaive.c:61: note: can't force alignment of ref: *_57
+dotNaive.c:61: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:61: note: === vect_prune_runtime_alias_test_list ===
+dotNaive.c:61: note: === vect_enhance_data_refs_alignment ===
+dotNaive.c:61: note: Unknown misalignment, is_packed = 0
+dotNaive.c:61: note: Unknown misalignment, is_packed = 0
+dotNaive.c:61: note: vect_can_advance_ivs_p:
+dotNaive.c:61: note: Analyze phi: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: Access function of PHI: {0, +, 1}_3
+dotNaive.c:61: note: Analyze phi: .MEM_158 = PHI <.MEM_62(9), .MEM_139(21)>
+
+dotNaive.c:61: note: virtual phi. skip.
+dotNaive.c:61: note: Setting misalignment to -1.
+dotNaive.c:61: note: Setting misalignment to -1.
+dotNaive.c:61: note: Alignment of access forced using peeling.
+dotNaive.c:61: note: Peeling for alignment will be applied.
+dotNaive.c:61: note: Vectorizing an unaligned access.
+dotNaive.c:61: note: === vect_analyze_slp ===
+dotNaive.c:61: note: === vect_make_slp_decision ===
+dotNaive.c:61: note: === vect_detect_hybrid_slp ===
+dotNaive.c:61: note: === vect_analyze_loop_operations ===
+dotNaive.c:61: note: examining phi: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: === vectorizable_induction ===
+dotNaive.c:61: note: vect_model_induction_cost: inside_cost = 1, prologue_cost = 2 .
+dotNaive.c:61: note: examining phi: .MEM_158 = PHI <.MEM_62(9), .MEM_139(21)>
+
+dotNaive.c:61: note: ==> examining statement: _47 = (long unsigned int) j_153;
+
+dotNaive.c:61: note: irrelevant.
+dotNaive.c:61: note: ==> examining statement: _48 = _47 * 8;
+
+dotNaive.c:61: note: irrelevant.
+dotNaive.c:61: note: ==> examining statement: _49 = A_43 + _48;
+
+dotNaive.c:61: note: irrelevant.
+dotNaive.c:61: note: ==> examining statement: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: vect_is_simple_use: operand 1
+dotNaive.c:61: note: === vectorizable_operation ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 1, prologue_cost = 1 .
+dotNaive.c:61: note: ==> examining statement: _52 = (double) j_51;
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_51
+dotNaive.c:61: note: def_stmt: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: === vectorizable_conversion ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 1, prologue_cost = 0 .
+dotNaive.c:61: note: ==> examining statement: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _52
+dotNaive.c:61: note: def_stmt: _52 = (double) j_51;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: === vectorizable_operation ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 2, prologue_cost = 1 .
+dotNaive.c:61: note: ==> examining statement: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _53
+dotNaive.c:61: note: def_stmt: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: === vectorizable_operation ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 2, prologue_cost = 1 .
+dotNaive.c:61: note: ==> examining statement: *_49 = _55;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _55
+dotNaive.c:61: note: def_stmt: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_model_store_cost: aligned.
+dotNaive.c:61: note: vect_model_store_cost: inside_cost = 2, prologue_cost = 0 .
+dotNaive.c:61: note: ==> examining statement: _57 = B_45 + _48;
+
+dotNaive.c:61: note: irrelevant.
+dotNaive.c:61: note: ==> examining statement: _58 = (double) j_153;
+
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: === vectorizable_conversion ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 1, prologue_cost = 0 .
+dotNaive.c:61: note: ==> examining statement: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _58
+dotNaive.c:61: note: def_stmt: _58 = (double) j_153;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand 1.5e+0
+dotNaive.c:61: note: === vectorizable_operation ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 2, prologue_cost = 1 .
+dotNaive.c:61: note: ==> examining statement: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _59
+dotNaive.c:61: note: def_stmt: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: === vectorizable_operation ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 2, prologue_cost = 1 .
+dotNaive.c:61: note: ==> examining statement: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _60
+dotNaive.c:61: note: def_stmt: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: === vectorizable_operation ===
+dotNaive.c:61: note: vect_model_simple_cost: inside_cost = 2, prologue_cost = 1 .
+dotNaive.c:61: note: ==> examining statement: *_57 = _61;
+
+dotNaive.c:61: note: vect_is_simple_use: operand _61
+dotNaive.c:61: note: def_stmt: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_model_store_cost: unaligned supported by hardware.
+dotNaive.c:61: note: vect_model_store_cost: inside_cost = 4, prologue_cost = 0 .
+dotNaive.c:61: note: ==> examining statement: if (j_51 < _112)
+
+dotNaive.c:61: note: irrelevant.
+dotNaive.c:61: note: === vect_update_slp_costs_according_to_vf ===cost model: prologue peel iters set to vf/2.cost model: epilogue peel iters set to vf/2 because peeling for alignment is unknown.
+dotNaive.c:61: note: Cost model analysis: 
+  Vector inside of loop cost: 20
+  Vector prologue cost: 36
+  Vector epilogue cost: 20
+  Scalar iteration cost: 10
+  Scalar outside cost: 7
+  Vector outside cost: 56
+  prologue iterations: 2
+  epilogue iterations: 2
+  Calculated minimum iters for profitability: 6
+
+dotNaive.c:61: note:   Runtime profitability threshold = 5
+
+dotNaive.c:61: note:   Static estimate profitability threshold = 5
+
+dotNaive.c:61: note: epilog loop required.
+dotNaive.c:61: note: vect_can_advance_ivs_p:
+dotNaive.c:61: note: Analyze phi: j_153 = PHI <j_51(9), 0(21)>
+
+dotNaive.c:61: note: Access function of PHI: {0, +, 1}_3
+dotNaive.c:61: note: Analyze phi: .MEM_158 = PHI <.MEM_62(9), .MEM_139(21)>
+
+dotNaive.c:61: note: virtual phi. skip.
+
+Vectorizing loop at dotNaive.c:61
+
+dotNaive.c:61: note: === vec_transform_loop ===
+dotNaive.c:61: note: Profitability threshold is 5 loop iterations.
+dotNaive.c:61: note: === vect_do_peeling_for_alignment ===
+dotNaive.c:61: note: created vect_pA.8_244
+dotNaive.c:61: note: niters for prolog loop: MIN_EXPR <(unsigned int) -(((unsigned long) vect_pA.8_244 & 15) >> 3) & 1, niters.5_245>
+loop at dotNaive.c:62: if (ivtmp_189 < prologue_after_cost_adjust.10_197)
+Setting upper bound of nb iterations for prologue loop to 4
+
+dotNaive.c:61: note: === vect_update_inits_of_dr ===
+dotNaive.c:61: note: === vect_do_peeling_for_loop_bound ===
+dotNaive.c:61: note: vect_update_ivs_after_vectorizer: phi: j_153 = PHI <j_51(9), j_196(51)>
+
+dotNaive.c:61: note: vect_update_ivs_after_vectorizer: phi: .MEM_158 = PHI <.MEM_62(9), .MEM_194(51)>
+
+dotNaive.c:61: note: virtual phi. skip.Setting upper bound of nb iterations for epilogue loop to 2
+
+dotNaive.c:61: note: ------>vectorizing phi: j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: transform phi.
+dotNaive.c:61: note: transform induction phi.
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: created new init_stmt: stmp_var_.16_69 = j_196 + 1;
+
+dotNaive.c:61: note: created new init_stmt: stmp_var_.16_68 = stmp_var_.16_69 + 1;
+
+dotNaive.c:61: note: created new init_stmt: stmp_var_.16_67 = stmp_var_.16_68 + 1;
+
+dotNaive.c:61: note: created new init_stmt: vect_cst_.17_66 = {j_196, stmp_var_.16_69, stmp_var_.16_68, stmp_var_.16_67};
+
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: created new init_stmt: vect_cst_.18_65 = { 4, 4, 4, 4 };
+
+dotNaive.c:61: note: transform induction: created def-use cycle: vect_vec_iv_.19_64 = PHI <vect_vec_iv_.19_63(9), vect_cst_.17_66(55)>
+
+vect_vec_iv_.19_63 = vect_vec_iv_.19_64 + vect_cst_.18_65;
+
+dotNaive.c:61: note: ------>vectorizing phi: .MEM_158 = PHI <.MEM_62(9), .MEM_194(55)>
+
+dotNaive.c:61: note: ------>vectorizing phi: vect_vec_iv_.19_64 = PHI <vect_vec_iv_.19_63(9), vect_cst_.17_66(55)>
+
+dotNaive.c:61: note: ------>vectorizing statement: vect_vec_iv_.19_63 = vect_vec_iv_.19_64 + vect_cst_.18_65;
+
+dotNaive.c:61: note: ------>vectorizing statement: _47 = (long unsigned int) j_153;
+
+dotNaive.c:61: note: ------>vectorizing statement: _48 = _47 * 8;
+
+dotNaive.c:61: note: ------>vectorizing statement: _49 = A_43 + _48;
+
+dotNaive.c:61: note: ------>vectorizing statement: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: vect_is_simple_use: operand 1
+dotNaive.c:61: note: transform binary/unary operation.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: j_153
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: def =  j_153  def_stmt =  j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: vect_get_vec_def_for_operand: 1
+dotNaive.c:61: note: vect_is_simple_use: operand 1
+dotNaive.c:61: note: get vectype with 4 units of type int
+dotNaive.c:61: note: vectype: vector(4) int
+dotNaive.c:61: note: Create vector_cst. nunits = 4
+dotNaive.c:61: note: created new init_stmt: vect_cst_.21_18 = { 1, 1, 1, 1 };
+
+dotNaive.c:61: note: add new stmt: vect_j.20_16 = vect_vec_iv_.19_64 + vect_cst_.21_18;
+
+dotNaive.c:61: note: ------>vectorizing statement: _52 = (double) j_51;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand j_51
+dotNaive.c:61: note: def_stmt: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: transform conversion. ncopies = 1.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: j_51
+dotNaive.c:61: note: vect_is_simple_use: operand j_51
+dotNaive.c:61: note: def_stmt: j_51 = j_153 + 1;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  j_51  def_stmt =  j_51 = j_153 + 1;
+
+dotNaive.c:61: note: add new stmt: vect_var_.22_12 = [vec_unpack_float_lo_expr] vect_j.20_16;
+
+dotNaive.c:61: note: add new stmt: vect_var_.22_7 = [vec_unpack_float_hi_expr] vect_j.20_16;
+
+dotNaive.c:61: note: ------>vectorizing statement: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _52
+dotNaive.c:61: note: def_stmt: _52 = (double) j_51;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: transform binary/unary operation.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _52
+dotNaive.c:61: note: vect_is_simple_use: operand _52
+dotNaive.c:61: note: def_stmt: _52 = (double) j_51;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _52  def_stmt =  _52 = (double) j_51;
+
+dotNaive.c:61: note: vect_get_vec_def_for_operand: pretmp_218
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def =  pretmp_218  def_stmt =  pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: Create vector_inv.
+dotNaive.c:61: note: created new init_stmt: vect_cst_.24_2 = {pretmp_218, pretmp_218};
+
+dotNaive.c:61: note: add new stmt: vect_var_.23_1 = vect_var_.22_12 * vect_cst_.24_2;
+
+dotNaive.c:61: note: add new stmt: vect_var_.23_259 = vect_var_.22_7 * vect_cst_.24_2;
+
+dotNaive.c:61: note: ------>vectorizing statement: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _53
+dotNaive.c:61: note: def_stmt: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: transform binary/unary operation.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _53
+dotNaive.c:61: note: vect_is_simple_use: operand _53
+dotNaive.c:61: note: def_stmt: _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _53  def_stmt =  _53 = _52 * pretmp_218;
+
+dotNaive.c:61: note: vect_get_vec_def_for_operand: pretmp_221
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def =  pretmp_221  def_stmt =  pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: Create vector_inv.
+dotNaive.c:61: note: created new init_stmt: vect_cst_.26_258 = {pretmp_221, pretmp_221};
+
+dotNaive.c:61: note: add new stmt: vect_var_.25_257 = vect_var_.23_1 / vect_cst_.26_258;
+
+dotNaive.c:61: note: add new stmt: vect_var_.25_250 = vect_var_.23_259 / vect_cst_.26_258;
+
+dotNaive.c:61: note: ------>vectorizing statement: *_49 = _55;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _55
+dotNaive.c:61: note: def_stmt: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: transform store. ncopies = 2
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _55
+dotNaive.c:61: note: vect_is_simple_use: operand _55
+dotNaive.c:61: note: def_stmt: _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _55  def_stmt =  _55 = _53 / pretmp_221;
+
+dotNaive.c:61: note: create vector_type-pointer variable to type: vector(2) double  vectorizing a pointer ref: *A_43
+dotNaive.c:61: note: created vect_pA.30_248
+dotNaive.c:61: note: add new stmt: MEM[(double *)vect_pA.27_243] = vect_var_.25_257;
+
+dotNaive.c:61: note: vect_is_simple_use: operand vect_var_.25_257
+dotNaive.c:61: note: def_stmt: vect_var_.25_257 = vect_var_.23_1 / vect_cst_.26_258;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: add new stmt: vect_pA.27_232 = vect_pA.27_243 + 16;
+
+dotNaive.c:61: note: add new stmt: MEM[(double *)vect_pA.27_232] = vect_var_.25_250;
+
+dotNaive.c:61: note: ------>vectorizing statement: _57 = B_45 + _48;
+
+dotNaive.c:61: note: ------>vectorizing statement: _58 = (double) j_153;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: transform conversion. ncopies = 1.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: j_153
+dotNaive.c:61: note: vect_is_simple_use: operand j_153
+dotNaive.c:61: note: def_stmt: j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: type of def: 4.
+dotNaive.c:61: note: def =  j_153  def_stmt =  j_153 = PHI <j_51(9), j_196(55)>
+
+dotNaive.c:61: note: add new stmt: vect_var_.31_56 = [vec_unpack_float_lo_expr] vect_vec_iv_.19_64;
+
+dotNaive.c:61: note: add new stmt: vect_var_.31_230 = [vec_unpack_float_hi_expr] vect_vec_iv_.19_64;
+
+dotNaive.c:61: note: ------>vectorizing statement: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _58
+dotNaive.c:61: note: def_stmt: _58 = (double) j_153;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand 1.5e+0
+dotNaive.c:61: note: transform binary/unary operation.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _58
+dotNaive.c:61: note: vect_is_simple_use: operand _58
+dotNaive.c:61: note: def_stmt: _58 = (double) j_153;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _58  def_stmt =  _58 = (double) j_153;
+
+dotNaive.c:61: note: vect_get_vec_def_for_operand: 1.5e+0
+dotNaive.c:61: note: vect_is_simple_use: operand 1.5e+0
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: Create vector_cst. nunits = 2
+dotNaive.c:61: note: created new init_stmt: vect_cst_.33_222 = { 1.5e+0, 1.5e+0 };
+
+dotNaive.c:61: note: add new stmt: vect_var_.32_220 = vect_var_.31_56 + vect_cst_.33_222;
+
+dotNaive.c:61: note: add new stmt: vect_var_.32_219 = vect_var_.31_230 + vect_cst_.33_222;
+
+dotNaive.c:61: note: ------>vectorizing statement: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _59
+dotNaive.c:61: note: def_stmt: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: transform binary/unary operation.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _59
+dotNaive.c:61: note: vect_is_simple_use: operand _59
+dotNaive.c:61: note: def_stmt: _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _59  def_stmt =  _59 = _58 + 1.5e+0;
+
+dotNaive.c:61: note: vect_get_vec_def_for_operand: pretmp_218
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_218
+dotNaive.c:61: note: def_stmt: pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def =  pretmp_218  def_stmt =  pretmp_218 = (double) i_141;
+
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: Create vector_inv.
+dotNaive.c:61: note: created new init_stmt: vect_cst_.35_217 = {pretmp_218, pretmp_218};
+
+dotNaive.c:61: note: add new stmt: vect_var_.34_216 = vect_var_.32_220 * vect_cst_.35_217;
+
+dotNaive.c:61: note: add new stmt: vect_var_.34_212 = vect_var_.32_219 * vect_cst_.35_217;
+
+dotNaive.c:61: note: ------>vectorizing statement: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _60
+dotNaive.c:61: note: def_stmt: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: transform binary/unary operation.
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _60
+dotNaive.c:61: note: vect_is_simple_use: operand _60
+dotNaive.c:61: note: def_stmt: _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _60  def_stmt =  _60 = _59 * pretmp_218;
+
+dotNaive.c:61: note: vect_get_vec_def_for_operand: pretmp_221
+dotNaive.c:61: note: vect_is_simple_use: operand pretmp_221
+dotNaive.c:61: note: def_stmt: pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: type of def: 2.
+dotNaive.c:61: note: def =  pretmp_221  def_stmt =  pretmp_221 = (double) _112;
+
+dotNaive.c:61: note: get vectype with 2 units of type double
+dotNaive.c:61: note: vectype: vector(2) double
+dotNaive.c:61: note: Create vector_inv.
+dotNaive.c:61: note: created new init_stmt: vect_cst_.37_211 = {pretmp_221, pretmp_221};
+
+dotNaive.c:61: note: add new stmt: vect_var_.36_210 = vect_var_.34_216 / vect_cst_.37_211;
+
+dotNaive.c:61: note: add new stmt: vect_var_.36_209 = vect_var_.34_212 / vect_cst_.37_211;
+
+dotNaive.c:61: note: ------>vectorizing statement: *_57 = _61;
+
+dotNaive.c:61: note: multiple-types.
+dotNaive.c:61: note: transform statement.
+dotNaive.c:61: note: vect_is_simple_use: operand _61
+dotNaive.c:61: note: def_stmt: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: transform store. ncopies = 2
+dotNaive.c:61: note: vect_get_vec_def_for_operand: _61
+dotNaive.c:61: note: vect_is_simple_use: operand _61
+dotNaive.c:61: note: def_stmt: _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: def =  _61  def_stmt =  _61 = _60 / pretmp_221;
+
+dotNaive.c:61: note: create vector_type-pointer variable to type: vector(2) double  vectorizing a pointer ref: *B_45
+dotNaive.c:61: note: created vect_pB.41_205
+dotNaive.c:61: note: add new stmt: MEM[(double *)vect_pB.38_204] = vect_var_.36_210;
+
+dotNaive.c:61: note: vect_is_simple_use: operand vect_var_.36_210
+dotNaive.c:61: note: def_stmt: vect_var_.36_210 = vect_var_.34_216 / vect_cst_.37_211;
+
+dotNaive.c:61: note: type of def: 3.
+dotNaive.c:61: note: add new stmt: vect_pB.38_265 = vect_pB.38_204 + 16;
+
+dotNaive.c:61: note: add new stmt: MEM[(double *)vect_pB.38_265] = vect_var_.36_209;
+
+dotNaive.c:61: note: ------>vectorizing statement: vect_pA.27_242 = vect_pA.27_232 + 16;
+
+dotNaive.c:61: note: ------>vectorizing statement: vect_pB.38_263 = vect_pB.38_265 + 16;
+
+dotNaive.c:61: note: ------>vectorizing statement: if (j_51 < _112)
+
+loop at dotNaive.c:62: if (ivtmp_267 < bnd.13_185)
+
+dotNaive.c:61: note: LOOP VECTORIZED.
+Analyzing loop at dotNaive.c:50
+
+dotNaive.c:50: note: ===== analyze_loop_nest =====
+dotNaive.c:50: note: === vect_analyze_loop_form ===
+dotNaive.c:50: note: === get_loop_niters ===
+dotNaive.c:50: note: ==> get_loop_niters:3
+dotNaive.c:50: note: === vect_analyze_data_refs ===
+
+dotNaive.c:50: note: not vectorized: loop contains function calls or data references that cannot be analyzed
+dotNaive.c:50: note: bad data references.
+dotNaive.c:34: note: vectorized 1 loops in function.
+
+dotNaive.c:61: note: Completely unroll loop 2 times
+
+dotNaive.c:34: note: Completely unroll loop 4 times
+
+dotNaive.c:41: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:41: note: === vect_analyze_data_refs ===
+
+dotNaive.c:41: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:42: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:42: note: === vect_analyze_data_refs ===
+
+dotNaive.c:42: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:47: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:47: note: === vect_analyze_data_refs ===
+
+dotNaive.c:47: note: get vectype with 2 units of type long unsigned int
+dotNaive.c:47: note: vectype: vector(2) long unsigned int
+dotNaive.c:47: note: === vect_pattern_recog ===
+dotNaive.c:47: note: === vect_analyze_dependences ===
+dotNaive.c:47: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:47: note: vect_compute_data_ref_alignment:
+dotNaive.c:47: note: can't force alignment of ref: MEM[(char * *)argv_23(D) + 8B]
+dotNaive.c:47: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:47: note: not consecutive access _26 = MEM[(char * *)argv_23(D) + 8B];
+
+dotNaive.c:47: note: === vect_analyze_slp ===
+dotNaive.c:47: note: Failed to SLP the basic block.
+dotNaive.c:47: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:51: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:51: note: === vect_analyze_data_refs ===
+
+dotNaive.c:51: note: get vectype with 2 units of type long unsigned int
+dotNaive.c:51: note: vectype: vector(2) long unsigned int
+dotNaive.c:51: note: === vect_pattern_recog ===
+dotNaive.c:51: note: vect_is_simple_use: operand _29
+dotNaive.c:51: note: def_stmt: _29 = (long unsigned int) i_138;
+
+dotNaive.c:51: note: type of def: 3.
+dotNaive.c:51: note: vect_is_simple_use: operand i_138
+dotNaive.c:51: note: def_stmt: i_138 = PHI <i_34(6), 0(4)>
+
+dotNaive.c:51: note: type of def: 2.
+dotNaive.c:51: note: vect_is_simple_use: operand 8
+dotNaive.c:51: note: === vect_analyze_dependences ===
+dotNaive.c:51: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:51: note: vect_compute_data_ref_alignment:
+dotNaive.c:51: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:51: note: Unknown alignment for access: *argv_23(D)
+dotNaive.c:51: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:51: note: === vect_analyze_slp ===
+dotNaive.c:51: note: Failed to SLP the basic block.
+dotNaive.c:51: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:53: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:53: note: === vect_analyze_data_refs ===
+
+dotNaive.c:53: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: not vectorized: no vectype for stmt: MEM[(double *)vect_pA.27_243] = vect_var_.25_257;
+ scalar_type: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand vect_var_.22_12
+dotNaive.c:62: note: def_stmt: vect_var_.22_12 = [vec_unpack_float_lo_expr] vect_j.20_16;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand vect_var_.22_7
+dotNaive.c:62: note: def_stmt: vect_var_.22_7 = [vec_unpack_float_hi_expr] vect_j.20_16;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand vect_var_.32_220
+dotNaive.c:62: note: def_stmt: vect_var_.32_220 = vect_var_.31_56 + vect_cst_.33_222;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand vect_var_.32_219
+dotNaive.c:62: note: def_stmt: vect_var_.32_219 = vect_var_.31_230 + vect_cst_.33_222;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _159
+dotNaive.c:62: note: def_stmt: _159 = (long unsigned int) j_167;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand j_167
+dotNaive.c:62: note: def_stmt: j_167 = PHI <j_271(14)>
+
+dotNaive.c:62: note: type of def: 2.
+dotNaive.c:62: note: vect_is_simple_use: operand 8
+dotNaive.c:62: note: vect_is_simple_use: operand _143
+dotNaive.c:62: note: def_stmt: _143 = (double) j_144;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _131
+dotNaive.c:62: note: def_stmt: _131 = _132 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_145
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_133
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_145 = _140;
+
+dotNaive.c:62: note: not consecutive access *_133 = _129;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _191
+dotNaive.c:62: note: def_stmt: _191 = (long unsigned int) j_115;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand j_115
+dotNaive.c:62: note: def_stmt: j_115 = PHI <tmp.15_82(12), j_196(34)>
+
+dotNaive.c:62: note: type of def: 2.
+dotNaive.c:62: note: vect_is_simple_use: operand 8
+dotNaive.c:62: note: vect_is_simple_use: operand _153
+dotNaive.c:62: note: def_stmt: _153 = (double) j_95;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _53
+dotNaive.c:62: note: def_stmt: _53 = _52 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_91
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_51
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_91 = _48;
+
+dotNaive.c:62: note: not consecutive access *_51 = _57;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _61
+dotNaive.c:62: note: def_stmt: _61 = (long unsigned int) j_59;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand j_59
+dotNaive.c:62: note: def_stmt: j_59 = PHI <j_95(13)>
+
+dotNaive.c:62: note: type of def: 2.
+dotNaive.c:62: note: vect_is_simple_use: operand 8
+dotNaive.c:62: note: vect_is_simple_use: operand _272
+dotNaive.c:62: note: def_stmt: _272 = (double) j_271;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _278
+dotNaive.c:62: note: def_stmt: _278 = _277 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_270
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_276
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_270 = _274;
+
+dotNaive.c:62: note: not consecutive access *_276 = _280;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:104: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:104: note: === vect_analyze_data_refs ===
+
+dotNaive.c:104: note: get vectype with 2 units of type double
+dotNaive.c:104: note: vectype: vector(2) double
+dotNaive.c:104: note: get vectype with 2 units of type double
+dotNaive.c:104: note: vectype: vector(2) double
+dotNaive.c:104: note: === vect_pattern_recog ===
+dotNaive.c:104: note: vect_is_simple_use: operand _116
+dotNaive.c:104: note: def_stmt: _116 = (long unsigned int) i_163;
+
+dotNaive.c:104: note: type of def: 3.
+dotNaive.c:104: note: vect_is_simple_use: operand i_163
+dotNaive.c:104: note: def_stmt: i_163 = PHI <i_125(15), 0(47)>
+
+dotNaive.c:104: note: type of def: 2.
+dotNaive.c:104: note: vect_is_simple_use: operand 8
+dotNaive.c:104: note: vect_is_simple_use: operand _119
+dotNaive.c:104: note: def_stmt: _119 = *_118;
+
+dotNaive.c:104: note: type of def: 3.
+dotNaive.c:104: note: === vect_analyze_dependences ===
+dotNaive.c:104: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:104: note: vect_compute_data_ref_alignment:
+dotNaive.c:104: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:104: note: Unknown alignment for access: *A_43
+dotNaive.c:104: note: vect_compute_data_ref_alignment:
+dotNaive.c:104: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:104: note: Unknown alignment for access: *B_45
+dotNaive.c:104: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:104: note: === vect_analyze_slp ===
+dotNaive.c:104: note: Failed to SLP the basic block.
+dotNaive.c:104: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:67: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:67: note: === vect_analyze_data_refs ===
+
+dotNaive.c:67: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:69: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:69: note: === vect_analyze_data_refs ===
+
+dotNaive.c:69: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:60: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:60: note: === vect_analyze_data_refs ===
+
+dotNaive.c:60: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:61: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:61: note: === vect_analyze_data_refs ===
+
+dotNaive.c:61: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _289
+dotNaive.c:62: note: def_stmt: _289 = 1.0e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _295
+dotNaive.c:62: note: def_stmt: _295 = _294 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_287
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_293
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_287 = _291;
+
+dotNaive.c:62: note: not consecutive access *_293 = _297;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _307
+dotNaive.c:62: note: def_stmt: _307 = 2.0e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _313
+dotNaive.c:62: note: def_stmt: _313 = _312 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_305
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_311
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_305 = _309;
+
+dotNaive.c:62: note: not consecutive access *_311 = _315;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _325
+dotNaive.c:62: note: def_stmt: _325 = 3.0e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _331
+dotNaive.c:62: note: def_stmt: _331 = _330 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_323
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_329
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_323 = _327;
+
+dotNaive.c:62: note: not consecutive access *_329 = _333;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _343
+dotNaive.c:62: note: def_stmt: _343 = 4.0e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _349
+dotNaive.c:62: note: def_stmt: _349 = _348 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_341
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_347
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_341 = _345;
+
+dotNaive.c:62: note: not consecutive access *_347 = _351;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:62: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:62: note: === vect_analyze_data_refs ===
+
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: get vectype with 2 units of type double
+dotNaive.c:62: note: vectype: vector(2) double
+dotNaive.c:62: note: === vect_pattern_recog ===
+dotNaive.c:62: note: vect_is_simple_use: operand _223
+dotNaive.c:62: note: def_stmt: _223 = 5.0e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: vect_is_simple_use: operand _203
+dotNaive.c:62: note: def_stmt: _203 = _207 + 1.5e+0;
+
+dotNaive.c:62: note: type of def: 3.
+dotNaive.c:62: note: === vect_analyze_dependences ===
+dotNaive.c:62: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_225
+dotNaive.c:62: note: vect_compute_data_ref_alignment:
+dotNaive.c:62: note: can't force alignment of ref: *_208
+dotNaive.c:62: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:62: note: not consecutive access *_225 = _214;
+
+dotNaive.c:62: note: not consecutive access *_208 = _201;
+
+dotNaive.c:62: note: === vect_analyze_slp ===
+dotNaive.c:62: note: Failed to SLP the basic block.
+dotNaive.c:62: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:74: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:74: note: === vect_analyze_data_refs ===
+
+dotNaive.c:74: note: get vectype with 2 units of type double
+dotNaive.c:74: note: vectype: vector(2) double
+dotNaive.c:74: note: === vect_pattern_recog ===
+dotNaive.c:74: note: vect_is_simple_use: operand _75
+dotNaive.c:74: note: def_stmt: _75 = (long unsigned int) i_150;
+
+dotNaive.c:74: note: type of def: 3.
+dotNaive.c:74: note: vect_is_simple_use: operand i_150
+dotNaive.c:74: note: def_stmt: i_150 = PHI <i_80(38), 0(36)>
+
+dotNaive.c:74: note: type of def: 2.
+dotNaive.c:74: note: vect_is_simple_use: operand 8
+dotNaive.c:74: note: === vect_analyze_dependences ===
+dotNaive.c:74: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:74: note: vect_compute_data_ref_alignment:
+dotNaive.c:74: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:74: note: Unknown alignment for access: *times_39
+dotNaive.c:74: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:74: note: === vect_analyze_slp ===
+dotNaive.c:74: note: Failed to SLP the basic block.
+dotNaive.c:74: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:80: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:80: note: === vect_analyze_data_refs ===
+
+dotNaive.c:80: note: get vectype with 2 units of type double
+dotNaive.c:80: note: vectype: vector(2) double
+dotNaive.c:80: note: === vect_pattern_recog ===
+dotNaive.c:80: note: vect_is_simple_use: operand _83
+dotNaive.c:80: note: def_stmt: _83 = (long unsigned int) i_151;
+
+dotNaive.c:80: note: type of def: 3.
+dotNaive.c:80: note: vect_is_simple_use: operand i_151
+dotNaive.c:80: note: def_stmt: i_151 = PHI <i_90(39), 0(49)>
+
+dotNaive.c:80: note: type of def: 2.
+dotNaive.c:80: note: vect_is_simple_use: operand 8
+dotNaive.c:80: note: vect_is_simple_use: operand _87
+dotNaive.c:80: note: def_stmt: _87 = _86 - timeAvg_136;
+
+dotNaive.c:80: note: type of def: 3.
+dotNaive.c:80: note: === vect_analyze_dependences ===
+dotNaive.c:80: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:80: note: vect_compute_data_ref_alignment:
+dotNaive.c:80: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:80: note: Unknown alignment for access: *times_39
+dotNaive.c:80: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:80: note: === vect_analyze_slp ===
+dotNaive.c:80: note: Failed to SLP the basic block.
+dotNaive.c:80: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:86: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:86: note: === vect_analyze_data_refs ===
+
+dotNaive.c:86: note: get vectype with 2 units of type double
+dotNaive.c:86: note: vectype: vector(2) double
+dotNaive.c:86: note: === vect_pattern_recog ===
+dotNaive.c:86: note: vect_is_simple_use: operand _97
+dotNaive.c:86: note: def_stmt: _97 = (long unsigned int) i_152;
+
+dotNaive.c:86: note: type of def: 3.
+dotNaive.c:86: note: vect_is_simple_use: operand i_152
+dotNaive.c:86: note: def_stmt: i_152 = PHI <i_101(41), 0(51)>
+
+dotNaive.c:86: note: type of def: 2.
+dotNaive.c:86: note: vect_is_simple_use: operand 8
+dotNaive.c:86: note: === vect_analyze_dependences ===
+dotNaive.c:86: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:86: note: vect_compute_data_ref_alignment:
+dotNaive.c:86: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:86: note: Unknown alignment for access: *times_39
+dotNaive.c:86: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:86: note: === vect_analyze_slp ===
+dotNaive.c:86: note: Failed to SLP the basic block.
+dotNaive.c:86: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:88: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:88: note: === vect_analyze_data_refs ===
+
+dotNaive.c:88: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:34: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:34: note: === vect_analyze_data_refs ===
+
+dotNaive.c:34: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:65: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:65: note: === vect_analyze_data_refs ===
+
+dotNaive.c:65: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:65: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:65: note: === vect_analyze_data_refs ===
+
+dotNaive.c:65: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:76: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:76: note: === vect_analyze_data_refs ===
+
+dotNaive.c:76: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:76: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:76: note: === vect_analyze_data_refs ===
+
+dotNaive.c:76: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:82: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:82: note: === vect_analyze_data_refs ===
+
+dotNaive.c:82: note: not vectorized: not enough data-refs in basic block.
+
+Analyzing loop at dotNaive.c:103
+
+dotNaive.c:103: note: ===== analyze_loop_nest =====
+dotNaive.c:103: note: === vect_analyze_loop_form ===
+dotNaive.c:103: note: === get_loop_niters ===
+dotNaive.c:103: note: ==> get_loop_niters:(unsigned int) n_3(D)
+dotNaive.c:103: note: Symbolic number of iterations is (unsigned int) n_3(D)
+dotNaive.c:103: note: === vect_analyze_data_refs ===
+
+dotNaive.c:103: note: get vectype with 2 units of type double
+dotNaive.c:103: note: vectype: vector(2) double
+dotNaive.c:103: note: get vectype with 2 units of type double
+dotNaive.c:103: note: vectype: vector(2) double
+dotNaive.c:103: note: === vect_analyze_scalar_cycles ===
+dotNaive.c:103: note: Analyze phi: i_19 = PHI <i_15(5), 0(3)>
+
+dotNaive.c:103: note: Access function of PHI: {0, +, 1}_1
+dotNaive.c:103: note: step: 1,  init: 0
+dotNaive.c:103: note: Detected induction.
+dotNaive.c:103: note: Analyze phi: s_20 = PHI <s_14(5), 0.0(3)>
+
+dotNaive.c:103: note: Access function of PHI: {0.0, +, _13}_1
+dotNaive.c:103: note: step: _13,  init: 0.0
+dotNaive.c:103: note: step unknown.
+dotNaive.c:103: note: Analyze phi: s_20 = PHI <s_14(5), 0.0(3)>
+
+dotNaive.c:103: note: reduction: unsafe fp math optimization: s_14 = _13 + s_20;
+
+dotNaive.c:103: note: Unknown def-use cycle pattern.
+dotNaive.c:103: note: === vect_pattern_recog ===
+dotNaive.c:103: note: vect_is_simple_use: operand _4
+dotNaive.c:103: note: def_stmt: _4 = (long unsigned int) i_19;
+
+dotNaive.c:103: note: type of def: 3.
+dotNaive.c:103: note: vect_is_simple_use: operand i_19
+dotNaive.c:103: note: def_stmt: i_19 = PHI <i_15(5), 0(3)>
+
+dotNaive.c:103: note: type of def: 4.
+dotNaive.c:103: note: vect_is_simple_use: operand 8
+dotNaive.c:103: note: vect_is_simple_use: operand _9
+dotNaive.c:103: note: def_stmt: _9 = *_7;
+
+dotNaive.c:103: note: type of def: 3.
+dotNaive.c:103: note: === vect_mark_stmts_to_be_vectorized ===
+dotNaive.c:103: note: init: phi relevant? i_19 = PHI <i_15(5), 0(3)>
+
+dotNaive.c:103: note: init: phi relevant? s_20 = PHI <s_14(5), 0.0(3)>
+
+dotNaive.c:103: note: init: stmt relevant? _4 = (long unsigned int) i_19;
+
+dotNaive.c:103: note: init: stmt relevant? _5 = _4 * 8;
+
+dotNaive.c:103: note: init: stmt relevant? _7 = A_6(D) + _5;
+
+dotNaive.c:103: note: init: stmt relevant? _9 = *_7;
+
+dotNaive.c:103: note: init: stmt relevant? _11 = B_10(D) + _5;
+
+dotNaive.c:103: note: init: stmt relevant? _12 = *_11;
+
+dotNaive.c:103: note: init: stmt relevant? _13 = _9 * _12;
+
+dotNaive.c:103: note: init: stmt relevant? s_14 = _13 + s_20;
+
+dotNaive.c:103: note: vec_stmt_relevant_p: used out of loop.
+dotNaive.c:103: note: mark relevant 0, live 1.
+dotNaive.c:103: note: init: stmt relevant? i_15 = i_19 + 1;
+
+dotNaive.c:103: note: init: stmt relevant? if (n_3(D) > i_15)
+
+dotNaive.c:103: note: worklist: examine stmt: s_14 = _13 + s_20;
+
+dotNaive.c:103: note: vect_is_simple_use: operand _13
+dotNaive.c:103: note: def_stmt: _13 = _9 * _12;
+
+dotNaive.c:103: note: type of def: 3.
+dotNaive.c:103: note: mark relevant 0, live 1.
+dotNaive.c:103: note: vect_is_simple_use: operand s_20
+dotNaive.c:103: note: def_stmt: s_20 = PHI <s_14(5), 0.0(3)>
+
+dotNaive.c:103: note: Unsupported pattern.
+dotNaive.c:103: note: not vectorized: unsupported use in stmt.
+dotNaive.c:103: note: unexpected pattern.
+dotNaive.c:99: note: vectorized 0 loops in function.
+
+dotNaive.c:103: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:103: note: === vect_analyze_data_refs ===
+
+dotNaive.c:103: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:99: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:99: note: === vect_analyze_data_refs ===
+
+dotNaive.c:99: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:104: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:104: note: === vect_analyze_data_refs ===
+
+dotNaive.c:104: note: get vectype with 2 units of type double
+dotNaive.c:104: note: vectype: vector(2) double
+dotNaive.c:104: note: get vectype with 2 units of type double
+dotNaive.c:104: note: vectype: vector(2) double
+dotNaive.c:104: note: === vect_pattern_recog ===
+dotNaive.c:104: note: vect_is_simple_use: operand _4
+dotNaive.c:104: note: def_stmt: _4 = (long unsigned int) i_19;
+
+dotNaive.c:104: note: type of def: 3.
+dotNaive.c:104: note: vect_is_simple_use: operand i_19
+dotNaive.c:104: note: def_stmt: i_19 = PHI <i_15(5), 0(3)>
+
+dotNaive.c:104: note: type of def: 2.
+dotNaive.c:104: note: vect_is_simple_use: operand 8
+dotNaive.c:104: note: vect_is_simple_use: operand _9
+dotNaive.c:104: note: def_stmt: _9 = *_7;
+
+dotNaive.c:104: note: type of def: 3.
+dotNaive.c:104: note: === vect_analyze_dependences ===
+dotNaive.c:104: note: === vect_analyze_data_refs_alignment ===
+dotNaive.c:104: note: vect_compute_data_ref_alignment:
+dotNaive.c:104: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:104: note: Unknown alignment for access: *A_6(D)
+dotNaive.c:104: note: vect_compute_data_ref_alignment:
+dotNaive.c:104: note: SLP: step doesn't divide the vector-size.
+dotNaive.c:104: note: Unknown alignment for access: *B_10(D)
+dotNaive.c:104: note: === vect_analyze_data_ref_accesses ===
+dotNaive.c:104: note: === vect_analyze_slp ===
+dotNaive.c:104: note: Failed to SLP the basic block.
+dotNaive.c:104: note: not vectorized: failed to find SLP opportunities in basic block.
+
+dotNaive.c:99: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:99: note: === vect_analyze_data_refs ===
+
+dotNaive.c:99: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:99: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:99: note: === vect_analyze_data_refs ===
+
+dotNaive.c:99: note: not vectorized: not enough data-refs in basic block.
+
+dotNaive.c:106: note: ===vect_slp_analyze_bb===
+
+dotNaive.c:106: note: === vect_analyze_data_refs ===
+
+dotNaive.c:106: note: not vectorized: not enough data-refs in basic block.

@@ -1,0 +1,16 @@
+__Steady State__
+Speedup & Efficiency:
+
+Absolute speedup Sn = Ts/Tp(n)
+	Ts - serial time
+	Tp(n) - parallel time for n threads
+
+4 samples for 1, 2, 4, & 8 threads:
+Tp1(n) = [0.558905,0.507513,0.803342, 0.893959 ]
+Tp2(n) = [0.559027,0.508803, 0.794545, 0.874568 ]
+Tp3(n) = [0.559485,0.508036, 0.784764 , 0.885903 ]
+Tp4(n) = [0.559024,0.507715, 0.789364 , 0.899046 ]
+Absolute efficiency En = Sn/n
+Ts = 0.526336
+Relative Speedup Ts -> Tp(n=1)
+Tp(n=1) = 0.559188
